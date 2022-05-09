@@ -2,6 +2,15 @@ const burger = document.querySelector(".burger");
 const navigation = document.querySelector(".navigation");
 const container = document.querySelector(".container");
 const scrollElement = document.querySelectorAll('.js-scroll');
+const loading = document.querySelector('.box-loading');
+const mainLoad = document.querySelector('.main-load');
+
+// loading
+
+window.addEventListener('load', ()=>{
+    loading.style.opacity = "0";
+    mainLoad.style.display = "block";
+});
 
 // hanburger toggle
 burger.onclick=()=>{

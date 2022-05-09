@@ -17,6 +17,51 @@
 i{
     cursor: pointer;
 }
+// box loading
+.box-loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $four--color;
+    z-index: 10000000000;
+    opacity: 1;
+    transition: opacity 0.3s; 
+    @include flex;
+    .dots {
+        width: 72px;
+        height: 34.6px;
+        background: radial-gradient(circle closest-side,#ff0077 90%,#0000) 0%   50%,
+               radial-gradient(circle closest-side,#ff0077 90%,#0000) 50%  50%,
+               radial-gradient(circle closest-side,#ff0077 90%,#0000) 100% 50%;
+        background-size: calc(100%/3) 17.3px;
+        background-repeat: no-repeat;
+        animation: dots-7ar3yq 1s infinite linear;
+     }
+     
+     @keyframes dots-7ar3yq {
+        20% {
+           background-position: 0%   0%, 50%  50%,100%  50%;
+        }
+     
+        40% {
+           background-position: 0% 100%, 50%   0%,100%  50%;
+        }
+     
+        60% {
+           background-position: 0%  50%, 50% 100%,100%   0%;
+        }
+     
+        80% {
+           background-position: 0%  50%, 50%  50%,100% 100%;
+        }
+     }
+}
+
+// display main to none
+.main-load{
+    display: none;
+    transition: display 0.3s;
+}
 .burger{
     display: none;
     position: absolute;
@@ -220,24 +265,25 @@ nav{
             font-size: clamp(0.8rem, 1.2vw, 3rem);
             line-height: 25px;
 
-            &:nth-child(3){
-                border: 3px solid $second--color--opacity;
-                border-radius: 20px;
-                width: 100px;
-                margin-inline: auto;
-                text-align: center;
-                margin-top: 20px;
-                transition: border-color 0.4s ;
-                font-size: clamp(0.9rem, 0.5vw, 2rem);
-                padding: 3px;
-                cursor: pointer;
+        }
+        button{
+            margin-top: 5px;
+            background-color: $second--color--opacity;
+            border: none;
+            width: 150px;
+            height: 50px;
+            letter-spacing: 1.5px;
+            color: $second--color;
+            font-weight: 700;
+            font-family: $font;
+            cursor: pointer;
+            transition: background-color 0.3s;
 
-                &:hover{
-                    border-color: $first--color;
-                    transition: border-color 0.4s;
-                }
+            &:hover{
+                background-color: $first--color;
+                transition: background-color 0.3s;
+
             }
-
         }
         
     }
