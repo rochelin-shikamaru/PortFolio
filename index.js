@@ -9,6 +9,7 @@ const mainLoad = document.querySelector('.main-load');
 
 window.addEventListener('load', ()=>{
     loading.style.opacity = "0";
+    loading.style.zIndex = "-1";
     mainLoad.style.display = "block";
 });
 
