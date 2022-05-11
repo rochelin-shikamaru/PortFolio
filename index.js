@@ -9,7 +9,6 @@ const mainLoad = document.querySelector('.main-load');
 
 window.addEventListener('load', ()=>{
     loading.style.opacity = "0";
-    loading.style.zIndex = "-1";
     mainLoad.style.display = "block";
 });
 
@@ -70,4 +69,13 @@ function hideScrollAnimation(item){
 
 window.addEventListener('scroll', ()=>{
     handleScrollAnimation();
+})
+
+window.addEventListener('resize', ()=>{
+    if(window.innerWidth >= 768){
+    navigation.style.transform = 'translateX(0)';
+    }
+    else{
+        navigation.style.transform = 'translateX(-100%)';
+    }
 })
