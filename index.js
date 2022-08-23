@@ -94,10 +94,10 @@ window.addEventListener("scroll", () => {
     document.querySelector(".active--navLink").classList.remove("active--navLink");
     document.querySelector(".scroll--accueil").classList.add("active--navLink");
 
-  } else if (document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -3715 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= -751) {
+  } else if (document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -3500 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= -751) {
     document.querySelector(".active--navLink").classList.remove("active--navLink");
     document.querySelector(".scroll--about").classList.add("active--navLink");
-  } else if (document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -6428 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= -3806) {
+  } else if (document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -6000 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= -3806) {
     document.querySelector(".active--navLink").classList.remove("active--navLink");
     document.querySelector(".scroll--projects").classList.add("active--navLink");
   } else{
