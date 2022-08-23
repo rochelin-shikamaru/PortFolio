@@ -90,14 +90,14 @@ navLink();
 
 window.addEventListener("scroll", () => {
   console.log(document.querySelector(".js-scroll-nav").getBoundingClientRect().top );
-  if ( document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -739 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= 0 ) {
+  if ( document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -740 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= 0 ) {
     document.querySelector(".active--navLink").classList.remove("active--navLink");
     document.querySelector(".scroll--accueil").classList.add("active--navLink");
 
-  } else if (document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -1891 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= -751) {
+  } else if (document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -2346 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= -751) {
     document.querySelector(".active--navLink").classList.remove("active--navLink");
     document.querySelector(".scroll--about").classList.add("active--navLink");
-  } else if (document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -7232 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= -3806) {
+  } else if (document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -7688 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= -2347) {
     document.querySelector(".active--navLink").classList.remove("active--navLink");
     document.querySelector(".scroll--projects").classList.add("active--navLink");
   } else{
