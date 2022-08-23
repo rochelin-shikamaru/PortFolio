@@ -10,6 +10,10 @@
     text-decoration: none;
     list-style: none;
     font-family: $font;
+    @font-face {
+        font-family: "satoshi";
+        src: url(./font/Satoshi-Variable.ttf);
+    }
  }
  html{
       scroll-behavior: smooth;
@@ -127,6 +131,28 @@ nav{
     font-size: 1.2rem;
     a{
         color: $second--color;
+        position: relative;
+        &:hover::after{
+            opacity: 1;
+            width: 100%;
+        }
+    }
+    a::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background-color: $first--color;
+        transform-origin: left;
+        transition:  all 0.4s ease;
+        opacity: 0;
+    }
+    .active--navLink::after{
+        width: 100%;
+        height: 2px;
+        opacity: 1;
     }
 
 }
@@ -134,14 +160,12 @@ nav{
     @include flex($justify: space-evenly);
     padding-top: 100px;
     a{
-
         color: $second--color;
         font-size: 1.8rem;
         transition: color 0.3s;
-
+         
         &:hover{
             color: $first--color;
-            transition: color 0.3s;
         }
     }
 }
@@ -187,7 +211,8 @@ nav{
                 color: $first--color;
                 font-weight: bold;
                 border-left: 5px solid $second--color;
-                border-right: 5px solid $second--color;   
+                border-right: 5px solid $second--color;
+                padding-inline: 10px;   
                 
             }
         }
@@ -268,9 +293,11 @@ nav{
 
         }
         button{
-            margin-top: 5px;
-            background-color: $second--color--opacity;
-            border: none;
+            position: relative;
+            margin-top: 15px;
+            background-color: transparent;
+            border: 2px solid $second--color--opacity;
+            border-radius: 10px;
             width: 150px;
             height: 50px;
             letter-spacing: 1.5px;
@@ -278,11 +305,31 @@ nav{
             font-weight: 700;
             font-family: $font;
             cursor: pointer;
-            transition: background-color 0.3s;
-
+            z-index: 1;
+            transition: border 0.3s ease-in;
+            
             &:hover{
+                border: none;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
                 background-color: $first--color;
-                transition: background-color 0.3s;
+                transform: scaleX(0);
+                transition: transform 0.3s ease-in;
+                transform-origin: right;
+                z-index: -1;
+            }
+
+            &:hover::after{
+                transform: scaleX(1);
+                transform-origin: left;
 
             }
         }
@@ -320,9 +367,9 @@ h3::after{
         width: Min(90%, 900px);
         min-height: 300px;
         margin-inline: auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
-        grid-auto-rows: minmax(auto, 400px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 2rem;
 
     }
@@ -332,6 +379,8 @@ h3::after{
 .container-svg{
     background: $second--color--opacity;
     box-shadow: 5px 5px 10px black;
+    min-width: Min(100%, 278px);
+
     .html{
         position: relative;
         margin-top: 30px;
@@ -357,51 +406,6 @@ h3::after{
             
         }
     }
-    svg{
-        width: 210px;   
-        height: 210px;
-        transform: rotate(-90deg);   
-        circle{
-            fill: none;
-            stroke-width: 20px;
-            stroke-linecap: round;
-            stroke-dasharray: 565;
-            stroke-dashoffset: 565;
-
-            &:nth-child(1){
-                stroke-dashoffset: 0;
-                stroke: white;
-                
-            }
-            
-        }
-        .scrolled.circle-html{
-            stroke: rgb(235, 81, 26);
-            animation: circle-1-2-3 2s forwards;
-        }
-        .scrolled.circle-css{
-            stroke: #5309dd;
-            animation: circle-1-2-3 2s forwards;
-
-        }
-        .scrolled.circle-js{
-            stroke:  #ecff08;   
-            animation: circle-1-2-3 2s forwards;
-            ;
-        }
-        .scrolled.circle-react{
-            stroke: rgb(38, 172, 245);
-            animation: circle-4 2s forwards;
-        }
-        .scrolled.circle-git{
-            stroke: rgb(235, 81, 26);
-            animation: circle-5-6 2s forwards;
-        }
-        .scrolled.circle-github{
-            stroke: $four--color;
-            animation: circle-5-6 2s forwards;
-        }
-    }
     
     span{
        position: absolute;
@@ -410,7 +414,6 @@ h3::after{
        font-weight: 500;
     }
     .name-circle{
-        margin-top: 6em;
         color: $second--color;
         width: 200px;
         height: 40px;
@@ -423,69 +426,111 @@ h3::after{
     }
 }
 
-@keyframes circle-1-2-3 {
-    100%{
-        stroke-dashoffset: 113;
-    }
-}
-@keyframes circle-4{
-    100%{
-        stroke-dashoffset: 226;
-    }
-}
-@keyframes circle-5-6{
-    100%{
-        stroke-dashoffset: 282.5;
-    }
-}
 
 // section projects
 #projects{
-    padding: 20px 0 40px 0;
+    padding: 0 0 40px 0;
     background-color: rgb(46, 57, 61);
+    
 }
 .projects--title{
     font-weight: 500;
-    text-transform: uppercase;
     text-align: center;
-    padding: 50px 0;
+    padding: 35px 0;
     h2{
         @include heading-2;
-    }
-    p{
-        font-size: 1rem;
-        @include description;
     }
 }
 .projects-grid{
     width: Min(90%, 900px);
     min-height: 300px;
     margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-auto-rows: minmax(auto, 300px);
+    display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    div{
-        cursor: pointer;
-        overflow: hidden;
+    &__contain{
+        min-width: Min(100%, 300px);
         box-shadow:  2px 2px 1px $four--color;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        background: transparent;
+
+        &:hover  p {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        &:hover a{
+            transform: translateX(50%);
+            opacity: 1;
+        }
+
+        &:hover img{
+            opacity: 0.1;
+        }
+
+        aside{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: white;
+            @include flex;
+            flex-direction: column;
+           
+            z-index: 1;
+            p{
+                width: 100%;
+                padding: 20px;
+                margin-bottom: 20px;
+                background-color: $first--color;
+                transform: translateX(-100%);
+                text-align: center;
+                transition: transform 0.4s ease;
+                font-family: "satoshi";
+                font-weight: bold;
+                font-size: clamp(0.8rem, 1.5vw, 3rem);
+            }
+            a{
+                width: 100%;
+                padding: 20px;
+                text-decoration: none;
+                color: $first--color;
+                background-color: $second--color;
+                transform: translateX(100%);
+                transition: transform 0.4s ease;
+                font-family: "satoshi";
+                font-weight: bold;
+                font-size: clamp(0.8rem, 1.5vw, 3rem);
+
+            }
+            i{
+                transform: rotate(140deg);
+                color: $first--color;
+            }
+        }
 
     }
 
     img{
         max-width: 100%;
         min-height: 100%;
-        transform: scale(1);
-        transition: transform 0.4s;
-        &:hover{
-            transform: scale(1.2);
-            transition: transform 0.4s;
-        }
+        transition: opacity 0.4s ease;
+        
     }
 
-}
 
+}
+// section certification
+#certifications{
+    background-color: gainsboro;
+    padding-bottom: 50px;
+}
 // section contacts
 #contact{
     background: $four--color;

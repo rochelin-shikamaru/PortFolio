@@ -1,197 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <title>Mouafo Rochelin</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/3d563fa050.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <div class="box-loading">
-        <div class="dots"></div>
+      <div class="dots"></div>
     </div>
-   <main class="main-load">
-       <section class="burger">
-           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
-           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
-       </section>
-       <section class="navigation">
-          <div class="bloc">
-            <div class="bloc-img">
-                <img src="./image/shikamaru.jpg" alt="profile">
+    <main class="main-load">
+      <section class="burger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+            <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+          </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+      </section>
+      <section class="navigation">
+        <div class="bloc">
+          <div class="bloc-img">
+            <img src="./image/shikamaru.jpg" alt="profile" />
+          </div>
+        </div>
+        <div class="border"></div>
+        <nav>
+          <a href="#accueil" class="active--navLink scroll--accueil">Accueil</a>
+          <a href="#about" class="scroll--about">A propos</a>
+          <a href="#projects" class="scroll--projects">projects</a>
+          <a href="#contact" class="scroll--contact">Contact</a>
+        </nav>
+        <div class="contact-link">
+          <a href="https://web.facebook.com/guilermin.mouafo/" target="_blank"
+            ><i class="fa-brands fa-facebook-square"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/rochelin-mouafo/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/rochelin-shikamaru" target="_blank"
+            ><i class="fa-brands fa-github-square"></i
+          ></a>
+        </div>
+      </section>
+      <section class="container">
+        <aside id="accueil" class="js-scroll-nav">
+          <div class="accueil--overlay"></div>
+          <div class="presentation">
+            <p class="presentaion--name">Mouafo Rochelin</p>
+            <ul>
+              <li>Développeur Front-End Js | React.js</li>
+            </ul>
+            <p class="presentaion--about">
+              <a href="#about"
+                >scroll down <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </p>
+          </div>
+        </aside>
+        <aside id="about">
+          <div class="about-about-img">
+            <div class="about-img js-scroll">
+              <img src="./image/shikamaru.jpg" alt="profile" />
+            </div>
+            <div class="about-about js-scroll">
+              <h3>A propos de moi</h3>
+              <p>
+                Je m’appelle Mouafo Rochelin Développeur Front-End. Grace a mon
+                experience et a mes competences acquises je suis en mesure de
+                vous fournir des interfaces graphiques performantes, accessibles
+                et adaptables pour tout type de supports numériques.
+              </p>
+              <a href="./image/cv-2..0-1.jpg" download>
+                <button>TELECHARGER CV</button></a
+              >
             </div>
           </div>
-           <div class="border"></div>
-           <nav>
-                <a href="#accueil">Accueil</a>
-                <a href="#about">A propos</a>
-                <a href="#projects">projects</a>
-                <a href="#contact">Contact</a>
-           </nav>
-           <div class="contact-link">
-            <a href="https://web.facebook.com/guilermin.mouafo/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="https://twitter.com/rochelin9" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-            <a href="https://github.com/rochelin-shikamaru" target="_blank" ><i class="fa-brands fa-github-square"></i></a>
-           </div>
-       </section>
-       <section class="container">
-           <aside id="accueil">
-               <div class="accueil--overlay"></div>
-               <div class="presentation">
-                   <p class="presentaion--name">Mouafo Rochelin</p>
-                   <ul>
-                       <li>Développeur Front-End </li>
-                   </ul>
-                   <p class="presentaion--about"><a href="#about">plus d'information <i class="fa-solid fa-chevron-down"></i></a></p>
-               </div>
-           </aside>
-           <aside id="about">
-               <div class="about-about-img">
-                   <div class="about-img js-scroll" >
-                       <img src="./image/shikamaru.jpg" alt="profile">
-                   </div>
-                   <div class="about-about js-scroll">
-                       <h3>A propos de moi</h3>
-                       <p>Je m’appelle Mouafo Rochelin Développeur Front-End. Passionner depuis l’enfance par l’informatique j’ai été séduit par la conception d’interface graphique des applications. En ce jour je suis en mesure de vous développez  des interfaces réactifs et adaptables a  tous les supports numériques favorable a une meilleure utilisation de l'utilisateurs.</p>
-                       <a href="./image/cv-2..0-1.jpg" download> <button>TELECHARGER CV</button></a>
-                   </div>
-               </div>
-           </aside>
-           <aside id="skill">
-               <h1>Compétences</h1>
-               <div class="bloc-skill">
-                   <!-- section html -->
-                   <div class="container-svg">
-                       <div class="html">
-                           <img src="./image/ico.png" alt="html5" class="img-html">
-                           <svg>
-                               <circle cx="100" cy="100" r="90px"></circle>
-                                <circle cx="100" cy="100" r="90px" class="circle-html js-scroll"></circle>
-                            </svg>
-
-                       </div>
-                       <div class="name-circle"><p>html5</p></div>
-                   </div>
-                   <!-- section css -->
-                   <div class="container-svg">
-                    <div class="html">
-                        <img src="./image/image-css3.png" alt="css" class="img-css">
-                        <svg>
-                            <circle cx="100" cy="100" r="90px"></circle>
-                             <circle cx="100" cy="100" r="90px" class="circle-css js-scroll"></circle>
-                         </svg>
-                    </div>
-                    <div class="name-circle"><p>css</p></div>
-                </div>
-                <!-- section javascript -->
-                <div class="container-svg">
-                    <div class="html">
-                        <img src="./image/image-js.png" alt="javascript" class="img-js">
-                        <svg>
-                            <circle cx="100" cy="100" r="90px"></circle>
-                             <circle cx="100" cy="100" r="90px" class="circle-js js-scroll"></circle>
-                         </svg>
-                    </div>
-                    <div class="name-circle"><p>javascript</p></div>
-                </div>
-                <!-- section react -->
-                <div class="container-svg">
-                    <div class="html">
-                        <img src="./image/img-react.png" alt="react" class="img-react">
-                        <svg>
-                            <circle cx="100" cy="100" r="90px"></circle>
-                             <circle cx="100" cy="100" r="90px" class="circle-react js-scroll"></circle>
-                         </svg>
-                    </div>
-                    <div class="name-circle"><p>react</p></div>
-                </div>
-                <!-- section git -->
-                <div class="container-svg">
-                    <div class="html">
-                        <img src="./image/git.png" alt="git" class="img-git">
-                        <svg>
-                            <circle cx="100" cy="100" r="90px"></circle>
-                             <circle cx="100" cy="100" r="90px" class="circle-git js-scroll"></circle>
-                         </svg>
-                    </div>
-                    <div class="name-circle"><p>git</p></div>
-                </div>
-                <!-- section github -->
-                <div class="container-svg">
-                    <div class="html">
-                        <img src="./image/github.png" alt="github" class="img-github">
-                        <svg>
-                            <circle cx="100" cy="100" r="90px"></circle>
-                             <circle cx="100" cy="100" r="90px" class="circle-github js-scroll"></circle>
-                         </svg>
-                    </div>
-                    <div class="name-circle"><p>github</p></div>
-                </div>
-               </div>
-           </aside>
-           <aside id="projects">
-               <div class="projects--title">
-                   <h2>projects</h2>
-                   <p>voici quelques-uns de mes projects</p>
-              </div>
-               <div class="projects-grid">
-                   <div class="img-1 js-scroll"><a href="https://codepen.io/shikamaru098/full/rNGggep" target="_blank"><img src="./image/img-1.png" alt="image"></a></div>
-                   <div class="img-2 js-scroll"><a href="https://space-tourism-info.netlify.app/" target="_blank"><img src="./image/img-2.png" alt="image"></a></div>
-                   <div class="img-3 js-scroll"><a href="https://codepen.io/shikamaru098/full/wvrgVqB" target="_blank"><img src="./image/img-3.png" alt="image"></a></div>
-                   <div class="img-4 js-scroll"><a href="https://codepen.io/shikamaru098/full/JjryVWG" target="_blank"><img src="./image/img-4.png" alt="image"></a></div>
-                   <div class="img-5 js-scroll"><a href="https://codepen.io/shikamaru098/full/NWaOwRR" target="_blank"><img src="./image/img-5.png" alt="image"></a></div>
-                   <div class="img-6 js-scroll"><a href="https://codepen.io/shikamaru098/full/dyVpQod" target="_blank"><img src="./image/img-6.png" alt="image"></a></div>
-                   
-               </div>
-           </aside>
-           <!--  -->
-           <aside id="projects">
-            <div class="projects--title">
-                <h2>certifications</h2>    
-            </div>
-            <div class="projects-grid">
-                <div class="img-1 js-scroll"><a href="https://www.freecodecamp.org/certification/shikamaru237/front-end-development-libraries" target="_blank"><img src="./image/front-end.png" alt="image"></a></div>
-                <div class="img-2 js-scroll"><a href="https://www.freecodecamp.org/certification/shikamaru237/javascript-algorithms-and-data-structures" target="_blank"><img src="./image/data-strucure-js.png" alt="image"></a></div>
-                <div class="img-3 js-scroll"><a href="https://www.freecodecamp.org/certification/shikamaru237/responsive-web-design" target="_blank"><img src="./image/responsive.png" alt="image"></a></div>
-
-            </div>
         </aside>
-           <aside id="contact">
-               <div class="contact-title">
-                   <h2>contact</h2>
-                   <p>Vous avez un projet sur lequel vous aimeriez que je travaille ?</p>
-               </div>
-                <div class="contact-link-form">
-                    <div class="contact-link js-scroll">
-                        <a href="https://web.facebook.com/guilermin.mouafo/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-                        <a href="https://twitter.com/rochelin9" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https://github.com/rochelin-shikamaru" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-                    </div>
-                    <div class="contact-form js-scroll">
-                        <form action="https://formsubmit.co/b784cc856e36131b4e377d45fa1fbdd0" method="POST">
-                            <div class="form-text-email">
-                                <input type="text" placeholder="Name" required name="Name">
-                                <input type="email" placeholder="Email" name="Email" required>
-                            </div>
-                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Que puis-je faire pour vous ?" required></textarea>
-                            <input type="submit" value="envoyer">
-                        </form>
-                    </div>
+        <aside id="skill">
+          <h1>Compétences</h1>
+          <div class="bloc-skill js-scroll">
+            <!-- section html -->
+            <div class="container-svg">
+              <div class="html">
+                <img src="./image/ico.png" alt="html5" class="img-html" />
+              </div>
+              <div class="name-circle"><p>html5</p></div>
+            </div>
+            <!-- section css -->
+            <div class="container-svg">
+              <div class="html">
+                <img src="./image/image-css3.png" alt="css" class="img-css" />
+              </div>
+              <div class="name-circle"><p>css</p></div>
+            </div>
+            <!-- section sass -->
+            <div class="container-svg">
+                <div class="html">
+                  <img src="./image/sass.png" alt="sass" class="img-sass" />
                 </div>
-            <footer>
-                <div class="footer-border"></div>
-                <div class="footer-copyright">
-                    <p>© Copyright 2022.</p>
-                    <p>Mouafo Rochelin</p>
+                <div class="name-circle"><p>sass</p></div>
+              </div>
+            <!-- section javascript -->
+            <div class="container-svg">
+              <div class="html">
+                <img
+                  src="./image/image-js.png"
+                  alt="javascript"
+                  class="img-js"
+                />
+              </div>
+              <div class="name-circle"><p>javascript</p></div>
+            </div>
+            <!-- section react -->
+            <div class="container-svg">
+              <div class="html">
+                <img
+                  src="./image/img-react.png"
+                  alt="react"
+                  class="img-react"
+                />
+              </div>
+              <div class="name-circle"><p>react</p></div>
+            </div>
+            <!-- section git -->
+            <div class="container-svg">
+              <div class="html">
+                <img src="./image/git.png" alt="git" class="img-git" />
+              </div>
+              <div class="name-circle"><p>git</p></div>
+            </div>
+            <!-- section github -->
+            <div class="container-svg">
+              <div class="html">
+                <img src="./image/github.png" alt="github" class="img-github" />
+              </div>
+              <div class="name-circle"><p>github</p></div>
+            </div>
+          </div>
+        </aside>
+        <aside id="projects">
+          <div class="projects--title">
+            <h2>Projects</h2>
+          </div>
+          <div class="projects-grid">
+            <div class="img-1 projects-grid__contain js-scroll">
+              <img src="./image/img-1.png" alt="image"/>
+              <aside>
+                <p>E-commerce product</p>
+                <a href="https://e-co-page.netlify.app" target="_blank">
+                  Go to website <i class="fa-solid fa-reply"></i></a>
+              </aside>
+            </div>
+            <div class="img-2 projects-grid__contain js-scroll">
+              <img src="./image/img-2.png" alt="image"/>
+              <aside>
+                <p>Job listings with filtering</p>
+                <a href="https://job-filtering-rochelin.netlify.app/" target="_blank">
+                  Go to website <i class="fa-solid fa-reply"></i></a>
+              </aside>
+            </div>
+            <div class="img-3 projects-grid__contain js-scroll">
+             <img src="./image/img-3.png" alt="image"/>
+             <aside>
+              <p>Shortly URL shortening API</p>
+              <a href="https://sshortlink.netlify.app" target="_blank">
+                Go to website <i class="fa-solid fa-reply"></i></a>
+            </aside>
+            </div>
+            <div class="img-4 projects-grid__contain js-scroll">
+              <img src="./image/img-4.png" alt="image"
+              />
+              <aside>
+                <p>Interactive comments section </p>
+                <a href="https://comments-interrative.netlify.app" target="_blank">
+                  Go to website <i class="fa-solid fa-reply"></i></a>
+              </aside>
+            </div>
+            <div class="img-5 projects-grid__contain js-scroll">
+             <img src="./image/img-5.png" alt="image"
+              />
+              <aside>
+                <p>REST Countries API with color theme switcher</p>
+                <a href="https://app-country-rochelin.netlify.app/" target="_blank">
+                  Go to website <i class="fa-solid fa-reply"></i></a>
+              </aside>
+            </div>
+            <div class="img-6 projects-grid__contain js-scroll">
+              <img src="./image/img-6.png" alt="image"
+              />
+              <aside>
+                <p>Space tourism website</p>
+                <a href="https://space-tourism-info.netlify.app/" target="_blank">
+                  Go to website <i class="fa-solid fa-reply"></i></a>
+              </aside>
+            </div>
+          </div>
+        </aside>
+        <!-- certifications -->
+        <aside id="certifications">
+          <div class="projects--title">
+            <h2>Certifications</h2>
+          </div>
+          <div class="projects-grid">
+            <div class="img-1 js-scroll">
+              <img src="./image/front-end.png" alt="image"
+              />
+            </div>
+            <div class="img-2 js-scroll">
+              
+              <img src="./image/data-strucure-js.png" alt="image"
+              />
+            </div>
+            <div class="img-3 js-scroll">
+              <img src="./image/responsive.png" alt="image"
+              />
+            </div>
+          </div>
+        </aside>
+        <aside id="contact">
+          <div class="contact-title">
+            <h2>Contact</h2>
+            <p>
+              Vous avez un projet sur lequel vous aimeriez que je travaille ?
+            </p>
+          </div>
+          <div class="contact-link-form">
+            <div class="contact-link js-scroll">
+              <a
+                href="https://web.facebook.com/guilermin.mouafo/"
+                target="_blank"
+                ><i class="fa-brands fa-facebook-square"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/rochelin-mouafo/" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/rochelin-shikamaru" target="_blank"
+                ><i class="fa-brands fa-github-square"></i
+              ></a>
+            </div>
+            <div class="contact-form js-scroll">
+              <form
+                action="https://formsubmit.co/b784cc856e36131b4e377d45fa1fbdd0"
+                method="POST"
+              >
+                <div class="form-text-email">
+                  <input type="text" placeholder="Name" required name="Name" />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="Email"
+                    required
+                  />
                 </div>
-            </footer>
-           </aside>
-       </section>
-   </main>
-   <script src="https://smtpjs.com/v3/smtp.js"></script>
-   <script src="./index.js"></script>
-</body>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  placeholder="Que puis-je faire pour vous ?"
+                  required
+                ></textarea>
+                <input type="submit" value="envoyer" />
+              </form>
+            </div>
+          </div>
+          <footer>
+            <div class="footer-border"></div>
+            <div class="footer-copyright">
+              <p>© Copyright 2022.</p>
+              <p>Mouafo Rochelin</p>
+            </div>
+          </footer>
+        </aside>
+      </section>
+    </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
