@@ -166,6 +166,7 @@ nav{
          
         &:hover{
             color: $first--color;
+            font-weight: 800;
         }
     }
 }
@@ -356,7 +357,8 @@ h3::after{
 #skill{
     padding-top: 20px;
     padding-bottom: 40px;
-    background: linear-gradient(330deg, #1f005c, #7d0061, #bc365d, #e6745c, #ffb56b);
+    //background: linear-gradient(330deg, #1f005c, #7d0061, #bc365d, #e6745c, #ffb56b);
+    background: linear-gradient(330deg, #1f005c, #7d0061, #bc365d, #e6745c, #feaf5f);
     h1{
         font-size: clamp(2.5rem, 8vw, 3rem);
         text-align: center;
@@ -378,8 +380,15 @@ h3::after{
 //section skill blocs competences
 .container-svg{
     background: $second--color--opacity;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px -1px black;
     min-width: Min(100%, 278px);
+    border-radius: 7px;
+    transition: transform 0.4s ease;
+    padding-bottom: 10px;
+    
+    &:hover{
+        transform: scale(1.2);
+    }
 
     .html{
         position: relative;
@@ -418,11 +427,10 @@ h3::after{
         width: 200px;
         height: 40px;
         margin-inline: auto;
-        border: 3px solid $second--color;
-        box-shadow:  5px 5px 5px $four--color;
         @include flex;
         text-transform: uppercase;
         font-weight: 500;
+        
     }
 }
 
@@ -562,7 +570,8 @@ h3::after{
             color: $second--color;
             transition: color 0.3s;
             i{
-                font-size: clamp(1.5rem, 3vw, 2.5rem);
+                font-size: clamp(1.9rem, 4vw, 2.5rem);
+                font-weight: 800;
             }
             &:hover{
                 color: $first--color;

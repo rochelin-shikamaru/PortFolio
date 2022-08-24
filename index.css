@@ -180,6 +180,7 @@ nav .active--navLink::after {
 }
 .contact-link a:hover {
   color: #FF0077;
+  font-weight: 800;
 }
 
 .container {
@@ -361,7 +362,7 @@ h3::after {
 #skill {
   padding-top: 20px;
   padding-bottom: 40px;
-  background: linear-gradient(330deg, #1f005c, #7d0061, #bc365d, #e6745c, #ffb56b);
+  background: linear-gradient(330deg, #1f005c, #7d0061, #bc365d, #e6745c, #feaf5f);
 }
 #skill h1 {
   font-size: clamp(2.5rem, 8vw, 3rem);
@@ -381,8 +382,14 @@ h3::after {
 
 .container-svg {
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px -1px black;
   min-width: min(100%, 278px);
+  border-radius: 7px;
+  transition: transform 0.4s ease;
+  padding-bottom: 10px;
+}
+.container-svg:hover {
+  transform: scale(1.2);
 }
 .container-svg .html {
   position: relative;
@@ -422,8 +429,6 @@ h3::after {
   width: 200px;
   height: 40px;
   margin-inline: auto;
-  border: 3px solid #FFFFFF;
-  box-shadow: 5px 5px 5px #1a1a1a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -573,7 +578,8 @@ h3::after {
   transition: color 0.3s;
 }
 .contact-link-form .scrolled.contact-link a i {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  font-weight: 800;
 }
 .contact-link-form .scrolled.contact-link a:hover {
   color: #FF0077;
