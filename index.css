@@ -253,7 +253,7 @@ nav .active--navLink::after {
 
 #about {
   height: 100vh;
-  background-color: #6e6e6e;
+  background-color: rgb(46, 57, 61);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,7 +362,7 @@ h3::after {
 #skill {
   padding-top: 20px;
   padding-bottom: 40px;
-  background: linear-gradient(330deg, #1f005c, #7d0061, #bc365d, #e6745c, #feaf5f);
+  background: linear-gradient(#1f005c, #7d0061, #bc365d, #e6745c);
 }
 #skill h1 {
   font-size: clamp(2.5rem, 8vw, 3rem);
@@ -709,7 +709,7 @@ footer .footer-copyright p {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .burger {
     display: block;
   }

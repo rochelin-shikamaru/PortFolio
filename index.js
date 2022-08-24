@@ -40,7 +40,7 @@ container.onclick = () => {
 // function animation scroll
 
 function elementInView(item, percentageScroll = 100) {
-  const distanceElement = item.getBoundingClientRect().top + 100 ;
+  const distanceElement = item.getBoundingClientRect().top + 100;
   return distanceElement <= window.innerHeight * (percentageScroll / 100);
 }
 
@@ -53,11 +53,8 @@ function handleScrollAnimation() {
     if (elementInView(item, 100)) {
       displayScrollElement(item);
     }
-    
   });
 }
-
-
 
 window.addEventListener("scroll", () => {
   handleScrollAnimation();
@@ -77,33 +74,77 @@ window.addEventListener("resize", () => {
 
 const navLink = () => {
   const a = document.querySelectorAll("nav a");
-  a.forEach(item => {
+  a.forEach((item) => {
     item.onclick = () => {
-      document.querySelector(".active--navLink").classList.remove("active--navLink");
+      document
+        .querySelector(".active--navLink")
+        .classList.remove("active--navLink");
       item.classList.add("active--navLink");
-    }
-  })
-}
+    };
+  });
+};
 navLink();
 
-// event to change active link in nav link when scroll is active 
+// event to change active link in nav link when scroll is active
 
 window.addEventListener("scroll", () => {
-  console.log(document.querySelector(".js-scroll-nav").getBoundingClientRect().top );
-  if ( document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -740 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= 0 ) {
-    document.querySelector(".active--navLink").classList.remove("active--navLink");
-    document.querySelector(".scroll--accueil").classList.add("active--navLink");
+  //console.log(document.querySelector(".js-scroll-nav").getBoundingClientRect().top );
+  let scrollNav = document
+    .querySelector(".js-scroll-nav")
+    .getBoundingClientRect().top;
 
-  } else if (document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -2346 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= -751) {
-    document.querySelector(".active--navLink").classList.remove("active--navLink");
-    document.querySelector(".scroll--about").classList.add("active--navLink");
-  } else if (document.querySelector(".js-scroll-nav").getBoundingClientRect().top > -7688 && document.querySelector(".js-scroll-nav").getBoundingClientRect().top <= -2347) {
-    document.querySelector(".active--navLink").classList.remove("active--navLink");
-    document.querySelector(".scroll--projects").classList.add("active--navLink");
-  } else{
-    document.querySelector(".active--navLink").classList.remove("active--navLink");
-    document.querySelector(".scroll--contact").classList.add("active--navLink");
+  if (window.innerWidth > 490) {
+    navigation.style.transform = "translateX(0)";
+    if (scrollNav > -740 && scrollNav <= 0) {
+    } else if (scrollNav > -2346 && scrollNav <= -751) {
+      document
+        .querySelector(".active--navLink")
+        .classList.remove("active--navLink");
+      document.querySelector(".scroll--about").classList.add("active--navLink");
+    } else if (scrollNav > -6839 && scrollNav <= -2347) {
+      document
+        .querySelector(".active--navLink")
+        .classList.remove("active--navLink");
+      document
+        .querySelector(".scroll--projects")
+        .classList.add("active--navLink");
+    } else {
+      document
+        .querySelector(".active--navLink")
+        .classList.remove("active--navLink");
+      document
+        .querySelector(".scroll--contact")
+        .classList.add("active--navLink");
+    }
+  } else {
+    if (scrollNav > -228 && scrollNav <= 0) {
+      document
+        .querySelector(".active--navLink")
+        .classList.remove("active--navLink");
+      document
+        .querySelector(".scroll--accueil")
+        .classList.add("active--navLink");
+    } else if (scrollNav > -3536 && scrollNav <= -229) {
+      document
+        .querySelector(".active--navLink")
+        .classList.remove("active--navLink");
+      document.querySelector(".scroll--about").classList.add("active--navLink");
+    } else if (scrollNav > -5702 && scrollNav <= -3536) {
+      document
+        .querySelector(".active--navLink")
+        .classList.remove("active--navLink");
+      document
+        .querySelector(".scroll--projects")
+        .classList.add("active--navLink");
+    } else {
+      document
+        .querySelector(".active--navLink")
+        .classList.remove("active--navLink");
+      document
+        .querySelector(".scroll--contact")
+        .classList.add("active--navLink");
+    }
   }
 });
 
-// ends 
+// ends

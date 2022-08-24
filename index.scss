@@ -247,7 +247,7 @@ nav{
 // section à propos
 #about{
     height: 100vh;
-    background-color: $three--color;
+    background-color: rgb(46, 57, 61);
     @include flex ;
     .about-about-img{
         @include flex ($justify: space-evenly);
@@ -358,7 +358,7 @@ h3::after{
     padding-top: 20px;
     padding-bottom: 40px;
     //background: linear-gradient(330deg, #1f005c, #7d0061, #bc365d, #e6745c, #ffb56b);
-    background: linear-gradient(330deg, #1f005c, #7d0061, #bc365d, #e6745c, #feaf5f);
+    background: linear-gradient( #1f005c, #7d0061, #bc365d, #e6745c);
     h1{
         font-size: clamp(2.5rem, 8vw, 3rem);
         text-align: center;
@@ -678,7 +678,7 @@ footer{
     opacity: 1;
 }
 //media device
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .burger{
         display: block;
     }
