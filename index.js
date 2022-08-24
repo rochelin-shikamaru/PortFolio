@@ -88,14 +88,18 @@ navLink();
 // event to change active link in nav link when scroll is active
 
 window.addEventListener("scroll", () => {
-  //console.log(document.querySelector(".js-scroll-nav").getBoundingClientRect().top );
+  console.log(document.querySelector(".js-scroll-nav").getBoundingClientRect().top );
   let scrollNav = document
     .querySelector(".js-scroll-nav")
     .getBoundingClientRect().top;
 
   if (window.innerWidth > 490) {
-    navigation.style.transform = "translateX(0)";
-    if (scrollNav > -740 && scrollNav <= 0) {
+   // navigation.style.transform = "translateX(0)";
+    if (scrollNav > -750 && scrollNav <= 0) {
+      document
+        .querySelector(".active--navLink")
+        .classList.remove("active--navLink");
+      document.querySelector(".scroll--accueil").classList.add("active--navLink");
     } else if (scrollNav > -2346 && scrollNav <= -751) {
       document
         .querySelector(".active--navLink")
