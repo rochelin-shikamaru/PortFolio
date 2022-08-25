@@ -355,15 +355,14 @@ h3::after{
 // section skill
 
 #skill{
-    padding-top: 20px;
+
     padding-bottom: 40px;
-    //background: linear-gradient(330deg, #1f005c, #7d0061, #bc365d, #e6745c, #ffb56b);
     background: linear-gradient( #1f005c, #7d0061, #bc365d, #e6745c);
     h1{
         font-size: clamp(2.5rem, 8vw, 3rem);
         text-align: center;
         color: $first--color;
-        margin-bottom: 20px;
+        padding: 35px 0;
     }
     .bloc-skill{
         width: Min(90%, 900px);
@@ -478,7 +477,7 @@ h3::after{
         }
 
         &:hover img{
-            opacity: 0.1;
+            opacity: 0.4;
         }
 
         aside{
@@ -499,7 +498,7 @@ h3::after{
                 background-color: $first--color;
                 transform: translateX(-100%);
                 text-align: center;
-                transition: transform 0.4s ease;
+                transition: transform 0.6s ease;
                 font-family: "satoshi";
                 font-weight: bold;
                 font-size: clamp(0.8rem, 1.5vw, 3rem);
@@ -511,7 +510,7 @@ h3::after{
                 color: $first--color;
                 background-color: $second--color;
                 transform: translateX(100%);
-                transition: transform 0.4s ease;
+                transition: transform 0.6s ease;
                 font-family: "satoshi";
                 font-weight: bold;
                 font-size: clamp(0.8rem, 1.5vw, 3rem);
@@ -545,10 +544,10 @@ h3::after{
 }
 .contact-title{
     text-align: center;
-    padding-top: 10px;
     h2{
         @include heading-2($size: 3rem);
-        line-height: 100px;
+        padding: 35px 0;
+        line-height: unset;
     }
     p{
         @include description;
