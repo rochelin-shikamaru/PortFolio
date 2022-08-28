@@ -382,7 +382,7 @@ h3::after {
   padding-bottom: 10px;
 }
 .container-svg:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 .container-svg .html {
   position: relative;
