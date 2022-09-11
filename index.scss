@@ -87,7 +87,7 @@ i{
     overflow: auto;
     background-color: $second--color;
     border-radius: 5px;
-    border: 2px dashed $first--color;
+    border: 1px solid $first--color;
 
     &__cross{
         position: absolute;
