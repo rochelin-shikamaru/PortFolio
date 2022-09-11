@@ -4,31 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="stylesheet" href="./index.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <title>Mouafo Rochelin</title>
 
-    <script src="https://kit.fontawesome.com/3d563fa050.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3d563fa050.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+
     <div class="box-loading">
       <div class="dots"></div>
     </div>
+
+    <!-- lightBox start -->
+    <div class="lightBox">
+      <div class="lightBox__show"></div>
+    
+      <div class="about--showDescription">
+        <div class="about--showDescription__cross" onclick="handleClickcross()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+        </div>
+        
+        <p>
+          Comment suis parvenu à être développeur frontend ? Voila une
+          sacrée question, au début je voulais être un hacker, un white hat
+          comme dans les films. Faisant des recherches je suis tomber sur un
+          site qui permettait d’apprendre à trouver les failles sur le web.
+          Après un certain temps j’avais pu finir les challenges sur les
+          bases, arrive le moment de faire des challenges sur les failles en
+          JavaScript je m’y met et je ne comprend absolument rien dessus,
+          tout ce que je connaissais en JavaScript par le passé c’était
+          alert() prompt() et confirm() de ce que j’avais appris au lycée.
+        </p>
+        <p>
+          A l’université on codait tous en C, C++ et Java. Un jour je
+          demande à mes amis s’ils connaissent le JavaScript la réponse fût
+          "oui le JavaScript c’est juste pour les nuls, c’est juste pour les
+          sites web". Je me suis rappelé comment les challenges en
+          JavaScript sur le site des hackers m’avaient mises k.o et ils
+          osent dire que c’est pour les nuls, en ce moment j’ai eu un déclic
+          je me suis mis au défis de les prouver que tous ce qu’ils codaient
+          dans les autres langages de programmations que c’était également
+          possible de le faire en JavaScript.
+        </p>
+        <p>
+          Après un mois à apprendre les bases en JavaScript j’ai pu coder
+          tout ce qu’ils codaient avec d’autres langages et j’ai pu refaire
+          le célèbre jeu du plus ou moins. Tellement c’était cool de les
+          voir me faire des éloges sur le comment j’ai pu coder tout ça je
+          me suis dit, pourquoi ne pas être développeur.
+        </p>
+        <p>
+          Pour faire les choses bien j’ai recommencé à zéro HTML, CSS,
+          JavaScript. Après des mois d’apprentissage en autodidacte j’avais
+          atteins un niveau plutôt bon mais je ne savais pas si je voulais
+          être front, back ou fullstack.
+        </p>
+        <p>
+          Une nuit en me baladant sur YouTube je tombe sur la vidéo d’un
+          youtubeur benjamin code il faisait le classement des meilleurs
+          sites français poster sur site awwwards et là je tombe
+          complètement séduis du coup j’ai eu ce fameux déclic que je veux
+          être développeur frontend.
+        </p>
+        <p>
+          Après un long travail acharner j’ai pu atteindre mon objectif.
+          Maintenant je recherche du travail si possible a distance et
+          j’aimerais vous aidez au tant que possible à résoudre vos
+          problèmes, afin de mieux faire prospérer votre business.
+        </p>
+        
+      </div>
+    </div>
+    
+    <!-- backface end -->
     <main class="main-load">
       <section class="burger">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
@@ -61,7 +142,8 @@
             ><i class="fa-brands fa-facebook-square"></i
           ></a>
           <a href="https://www.linkedin.com/in/rochelin-mouafo/" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i></a>
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
           <a href="https://github.com/rochelin-shikamaru" target="_blank"
             ><i class="fa-brands fa-github-square"></i
           ></a>
@@ -84,22 +166,32 @@
         </aside>
         <aside id="about">
           <div class="about-about-img">
-            <div class="about-img js-scroll">
+            <div class="about-img js-scroll</div>">
               <img src="./image/shikamaru.jpg" alt="profile" />
             </div>
             <div class="about-about js-scroll">
               <h3>A propos de moi</h3>
               <p>
-                Je m’appelle Mouafo Rochelin Développeur Front-End. Grace a mon
-                expérience et  mes compétences acquises, je suis en mesure de
-                vous fournir des interfaces graphiques performantes, accessibles
-                et adaptables, pour tout type de supports numériques.
+                Comment suis parvenu à être développeur frontend ? Voila une
+                sacrée question, au début je voulais être un hacker, un white
+                hat comme dans les films. Faisant des recherches je suis tomber
+                sur un site qui permettait d’apprendre à trouver les failles sur
+                le web...
               </p>
-              <a href="./cv/shikamaru nara2.pdf" download="cv rochelin">
-                <button>TELECHARGER CV</button></a
-              >
+              <div class="about-about--button">
+                <button
+                  class="button--voirPlus"
+                  onclick="handleClickShowMore()"
+                >
+                  Voir plus
+                </button>
+                <a href="./cv/shikamaru nara2.pdf" download="cv rochelin">
+                  <button>TELECHARGER CV</button></a
+                >
+              </div>
             </div>
           </div>
+          
         </aside>
         <aside id="skill">
           <h1>Compétences</h1>
@@ -120,11 +212,11 @@
             </div>
             <!-- section sass -->
             <div class="container-svg">
-                <div class="html">
-                  <img src="./image/sass.png" alt="sass" class="img-sass" />
-                </div>
-                <div class="name-circle"><p>sass</p></div>
+              <div class="html">
+                <img src="./image/sass.png" alt="sass" class="img-sass" />
               </div>
+              <div class="name-circle"><p>sass</p></div>
+            </div>
             <!-- section javascript -->
             <div class="container-svg">
               <div class="html">
@@ -169,54 +261,69 @@
           </div>
           <div class="projects-grid">
             <div class="img-1 projects-grid__contain js-scroll">
-              <img src="./image/img-1.png" alt="image"/>
+              <img src="./image/img-1.png" alt="image" />
               <aside>
                 <p>E-commerce product</p>
                 <a href="https://e-co-page.netlify.app" target="_blank">
-                  Go to website <i class="fa-solid fa-reply"></i></a>
+                  Go to website <i class="fa-solid fa-reply"></i
+                ></a>
               </aside>
             </div>
             <div class="img-2 projects-grid__contain js-scroll">
-              <img src="./image/img-2.png" alt="image"/>
+              <img src="./image/img-2.png" alt="image" />
               <aside>
                 <p>Job listings with filtering</p>
-                <a href="https://job-filtering-rochelin.netlify.app/" target="_blank">
-                  Go to website <i class="fa-solid fa-reply"></i></a>
+                <a
+                  href="https://job-filtering-rochelin.netlify.app/"
+                  target="_blank"
+                >
+                  Go to website <i class="fa-solid fa-reply"></i
+                ></a>
               </aside>
             </div>
             <div class="img-3 projects-grid__contain js-scroll">
-             <img src="./image/img-3.png" alt="image"/>
-             <aside>
-              <p>Shortly URL shortening API</p>
-              <a href="https://sshortlink.netlify.app" target="_blank">
-                Go to website <i class="fa-solid fa-reply"></i></a>
-            </aside>
+              <img src="./image/img-3.png" alt="image" />
+              <aside>
+                <p>Shortly URL shortening API</p>
+                <a href="https://sshortlink.netlify.app" target="_blank">
+                  Go to website <i class="fa-solid fa-reply"></i
+                ></a>
+              </aside>
             </div>
             <div class="img-4 projects-grid__contain js-scroll">
-              <img src="./image/img-4.png" alt="image"
-              />
+              <img src="./image/img-4.png" alt="image" />
               <aside>
-                <p>Interactive comments section </p>
-                <a href="https://comments-interrative.netlify.app" target="_blank">
-                  Go to website <i class="fa-solid fa-reply"></i></a>
+                <p>Interactive comments section</p>
+                <a
+                  href="https://comments-interrative.netlify.app"
+                  target="_blank"
+                >
+                  Go to website <i class="fa-solid fa-reply"></i
+                ></a>
               </aside>
             </div>
             <div class="img-5 projects-grid__contain js-scroll">
-             <img src="./image/img-5.png" alt="image"
-              />
+              <img src="./image/img-5.png" alt="image" />
               <aside>
                 <p>REST Countries API with color theme switcher</p>
-                <a href="https://app-country-rochelin.netlify.app/" target="_blank">
-                  Go to website <i class="fa-solid fa-reply"></i></a>
+                <a
+                  href="https://app-country-rochelin.netlify.app/"
+                  target="_blank"
+                >
+                  Go to website <i class="fa-solid fa-reply"></i
+                ></a>
               </aside>
             </div>
             <div class="img-6 projects-grid__contain js-scroll">
-              <img src="./image/img-6.png" alt="image"
-              />
+              <img src="./image/img-6.png" alt="image" />
               <aside>
                 <p>Space tourism website</p>
-                <a href="https://space-tourism-info.netlify.app/" target="_blank">
-                  Go to website <i class="fa-solid fa-reply"></i></a>
+                <a
+                  href="https://space-tourism-info.netlify.app/"
+                  target="_blank"
+                >
+                  Go to website <i class="fa-solid fa-reply"></i
+                ></a>
               </aside>
             </div>
           </div>
@@ -228,26 +335,19 @@
           </div>
           <div class="projects-grid">
             <div class="img-1 js-scroll">
-              <img src="./image/front-end.png" alt="image"
-              />
+              <img src="./image/front-end.png" alt="image" />
             </div>
             <div class="img-2 js-scroll">
-              
-              <img src="./image/data-strucure-js.png" alt="image"
-              />
+              <img src="./image/data-strucure-js.png" alt="image" />
             </div>
             <div class="img-3 js-scroll">
-              <img src="./image/responsive.png" alt="image"
-              />
+              <img src="./image/responsive.png" alt="image" />
             </div>
           </div>
         </aside>
         <aside id="contact">
           <div class="contact-title">
             <h2>Contact</h2>
-            <p>
-              Vous avez un projet sur lequel vous aimeriez que je travaille ?
-            </p>
           </div>
           <div class="contact-link-form">
             <div class="contact-link js-scroll">
@@ -256,8 +356,11 @@
                 target="_blank"
                 ><i class="fa-brands fa-facebook-square"></i
               ></a>
-              <a href="https://www.linkedin.com/in/rochelin-mouafo/" target="_blank"
-                ><i class="fa-brands fa-linkedin"></i></a>
+              <a
+                href="https://www.linkedin.com/in/rochelin-mouafo/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
               <a href="https://github.com/rochelin-shikamaru" target="_blank"
                 ><i class="fa-brands fa-github-square"></i
               ></a>

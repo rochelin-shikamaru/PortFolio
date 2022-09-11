@@ -69,6 +69,52 @@ i {
   }
 }
 
+.lightBox {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightBox__show {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  opacity: 0.9;
+}
+
+.about--showDescription {
+  position: absolute;
+  width: min(90%, 800px);
+  height: 90vh;
+  margin-inline: auto;
+  padding: 20px 0;
+  overflow: auto;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 2px dashed #FF0077;
+}
+.about--showDescription__cross {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.about--showDescription__cross svg g {
+  fill: #FF0077;
+}
+.about--showDescription p {
+  margin: 30px;
+  font-family: "Poppins", sans-serif;
+  line-height: 25px;
+  color: rgb(46, 57, 61);
+}
+
 .main-load {
   display: none;
   transition: display 0.3s;
@@ -299,6 +345,15 @@ nav .active--navLink::after {
   max-width: 100%;
   font-size: clamp(0.8rem, 1.2vw, 3rem);
   line-height: 25px;
+}
+#about .about-about--button {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+#about .about-about .button--voirPlus {
+  margin-right: 20px;
 }
 #about .about-about button {
   position: relative;
@@ -745,5 +800,27 @@ footer .footer-copyright p {
   }
   .contact-link-form .contact-form {
     margin: 0;
+  }
+}
+@-webkit-keyframes shakes {
+  0% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+@keyframes shakes {
+  0% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
   }
 }/*# sourceMappingURL=index.css.map */

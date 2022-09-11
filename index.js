@@ -88,7 +88,7 @@ navLink();
 // event to change active link in nav link when scroll is active
 
 window.addEventListener("scroll", () => {
-  console.log(document.querySelector(".js-scroll-nav").getBoundingClientRect().top );
+ // console.log(document.querySelector(".js-scroll-nav").getBoundingClientRect().top );
   let scrollNav = document
     .querySelector(".js-scroll-nav")
     .getBoundingClientRect().top;
@@ -151,4 +151,21 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// ends
+// function to show more description
+
+const handleClickShowMore = () => {
+  const backdrop = document.querySelector(".lightBox");
+  backdrop.style.display = "flex";
+
+}
+
+// function to close show more
+
+const handleClickcross = () => {
+  const backdrop = document.querySelector(".lightBox");
+  backdrop.style.display = "none";
+ 
+}
+
+
+/// ends
