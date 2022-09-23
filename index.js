@@ -4,6 +4,8 @@ const container = document.querySelector(".container");
 const scrollElement = document.querySelectorAll(".js-scroll");
 const loading = document.querySelector(".box-loading");
 const mainLoad = document.querySelector(".main-load");
+const navA = document.querySelectorAll("nav a");
+
 
 // loading
 
@@ -27,15 +29,19 @@ burger.onclick = () => {
   }
 };
 
-// function to translate nav
-container.onclick = () => {
+// function to translate nav to left
+const translateNav = () => {
   if (burger.classList.contains("active")) {
     burger.classList.remove("active");
     navigation.style.transform = "translateX(-100%)";
     burger.children[1].style.display = "block";
     burger.children[0].style.display = "none";
   }
-};
+}
+container.addEventListener("click", translateNav);
+navA.forEach(item => {
+  item.addEventListener("click", translateNav);
+})
 
 // function animation scroll
 
@@ -156,6 +162,8 @@ window.addEventListener("scroll", () => {
 const handleClickShowMore = () => {
   const backdrop = document.querySelector(".lightBox");
   backdrop.style.display = "flex";
+  burger.children[1].style.display = "none";
+
 
 }
 
@@ -164,6 +172,7 @@ const handleClickShowMore = () => {
 const handleClickcross = () => {
   const backdrop = document.querySelector(".lightBox");
   backdrop.style.display = "none";
+  burger.children[1].style.display = "block";
  
 }
 

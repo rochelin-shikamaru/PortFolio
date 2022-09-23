@@ -80,21 +80,25 @@ i{
 // about--showDescription
 .about--showDescription{
     position: absolute;
-    width: Min(90%, 800px);
-    height: 90vh;
+    width: Min(90%, 700px);
+    height: 75vh;
     margin-inline: auto;
     padding: 20px 0;
     overflow: auto;
     background-color: $second--color;
     border-radius: 5px;
     border: 1px solid $first--color;
+    @media screen and (max-width: 490px) {
+        height: 70vh;
+    }
 
     &__cross{
         position: absolute;
         cursor: pointer;
-        top: 0;
+        top: 30px;
         left: 50%;
         transform: translate(-50%, 50%);
+        z-index: 5;
         svg{
             g{
                 fill: $first--color;
@@ -109,6 +113,8 @@ i{
         font-family: $font;
         line-height: 25px;
         color:rgb(46, 57, 61);
+        font-size: clamp(0.9rem, 1.2vw, 3rem);
+        
     }
 
 }
@@ -553,8 +559,8 @@ h3::after{
             color: white;
             @include flex;
             flex-direction: column;
-           
             z-index: 1;
+            
             p{
                 width: 100%;
                 padding: 20px;
@@ -563,7 +569,6 @@ h3::after{
                 transform: translateX(-100%);
                 text-align: center;
                 transition: transform 0.6s ease;
-                
                 font-weight: bold;
                 font-size: clamp(0.8rem, 1.5vw, 3rem);
             }

@@ -89,8 +89,8 @@ i {
 
 .about--showDescription {
   position: absolute;
-  width: min(90%, 800px);
-  height: 90vh;
+  width: min(90%, 700px);
+  height: 75vh;
   margin-inline: auto;
   padding: 20px 0;
   overflow: auto;
@@ -98,12 +98,18 @@ i {
   border-radius: 5px;
   border: 1px solid #FF0077;
 }
+@media screen and (max-width: 490px) {
+  .about--showDescription {
+    height: 70vh;
+  }
+}
 .about--showDescription__cross {
   position: absolute;
   cursor: pointer;
-  top: 0;
+  top: 30px;
   left: 50%;
   transform: translate(-50%, 50%);
+  z-index: 5;
 }
 .about--showDescription__cross svg g {
   fill: #FF0077;
@@ -113,6 +119,7 @@ i {
   font-family: "Poppins", sans-serif;
   line-height: 25px;
   color: rgb(46, 57, 61);
+  font-size: clamp(0.9rem, 1.2vw, 3rem);
 }
 
 .main-load {
