@@ -809,3 +809,23 @@ footer{
         transform: translateX(50%);
     }
 }
+
+// description projects title + text + link
+
+.description_Project {
+    &__container{
+        margin-bottom: 30px;
+        
+    }
+    h1{ 
+        color: $first--color;
+        margin-bottom: 10px; 
+    }
+    p{
+        margin-bottom: 10px;
+        font-size: clamp(0.8rem, 1.2vw, 3rem);
+        color: $second--color;
+        line-height: 22px;
+        font-weight: 600;
+    }
+}
