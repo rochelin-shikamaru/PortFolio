@@ -831,8 +831,8 @@ footer .footer-copyright p {
     transform: translateX(50%);
   }
 }
-.description_Project__container {
-  margin-bottom: 30px;
+.description_Project {
+  margin-bottom: 40px;
 }
 .description_Project h1 {
   color: #FF0077;
@@ -842,6 +842,6 @@ footer .footer-copyright p {
   margin-bottom: 10px;
   font-size: clamp(0.8rem, 1.2vw, 3rem);
   color: #FFFFFF;
-  line-height: 22px;
+  line-height: 23px;
   font-weight: 600;
 }/*# sourceMappingURL=index.css.map */
