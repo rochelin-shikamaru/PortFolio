@@ -239,7 +239,7 @@ nav .active--navLink::after {
 #accueil {
   width: 100%;
   height: 100vh;
-  background-image: url("./image/fond.jpg");
+  background-image: url("./image/fond.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
