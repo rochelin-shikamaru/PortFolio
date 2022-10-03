@@ -233,6 +233,7 @@ nav .active--navLink::after {
 .container {
   width: calc(100% - 13rem);
   margin-left: auto;
+  overflow-x: hidden;
 }
 
 #accueil {
@@ -762,6 +763,17 @@ footer .footer-copyright p {
   opacity: 1;
 }
 
+.fade-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @media screen and (max-width: 767px) {
   .burger {
     display: block;
@@ -843,5 +855,4 @@ footer .footer-copyright p {
   font-size: clamp(0.8rem, 1.2vw, 3rem);
   color: #FFFFFF;
   line-height: 23px;
-  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */

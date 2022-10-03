@@ -232,6 +232,7 @@ nav{
 .container{
     width: calc(100% - 13rem);
     margin-left: auto;
+    overflow-x: hidden;
 
 }
 
@@ -745,6 +746,15 @@ footer{
 .js-scroll.scrolled{
     opacity: 1;
 }
+.fade-left{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.js-scroll.scrolled{
+    opacity: 1;
+    transform: translateX(0);
+}
 //media device
 @media screen and (max-width: 767px) {
     .burger{
@@ -814,11 +824,7 @@ footer{
 
 .description_Project {
     margin-bottom: 40px;
-   //border: 1px solid yellow;
 
-    // &__container{
-    //    // border: 1px solid red;
-    // }
     h1{ 
         color: $first--color;
         margin-bottom: 10px; 
@@ -828,6 +834,5 @@ footer{
         font-size: clamp(0.8rem, 1.2vw, 3rem);
         color: $second--color;
         line-height: 23px;
-        font-weight: 600;
     }
 }

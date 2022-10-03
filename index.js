@@ -94,13 +94,14 @@ navLink();
 // event to change active link in nav link when scroll is active
 
 window.addEventListener("scroll", () => {
- // console.log(document.querySelector(".js-scroll-nav").getBoundingClientRect().top );
+ 
   let scrollNav = document
     .querySelector(".js-scroll-nav")
     .getBoundingClientRect().top;
-
+    console.log(scrollNav);
   if (window.innerWidth > 490) {
    // navigation.style.transform = "translateX(0)";
+  
     if (scrollNav > -750 && scrollNav <= 0) {
       document
         .querySelector(".active--navLink")
@@ -111,7 +112,7 @@ window.addEventListener("scroll", () => {
         .querySelector(".active--navLink")
         .classList.remove("active--navLink");
       document.querySelector(".scroll--about").classList.add("active--navLink");
-    } else if (scrollNav > -6839 && scrollNav <= -2347) {
+    } else if (scrollNav > -9324 && scrollNav <= -2347) {
       document
         .querySelector(".active--navLink")
         .classList.remove("active--navLink");
@@ -127,6 +128,7 @@ window.addEventListener("scroll", () => {
         .classList.add("active--navLink");
     }
   } else {
+    
     if (scrollNav > -228 && scrollNav <= 0) {
       document
         .querySelector(".active--navLink")
@@ -139,7 +141,7 @@ window.addEventListener("scroll", () => {
         .querySelector(".active--navLink")
         .classList.remove("active--navLink");
       document.querySelector(".scroll--about").classList.add("active--navLink");
-    } else if (scrollNav > -5702 && scrollNav <= -3536) {
+    } else if (scrollNav > -8202 && scrollNav <= -3536) {
       document
         .querySelector(".active--navLink")
         .classList.remove("active--navLink");
