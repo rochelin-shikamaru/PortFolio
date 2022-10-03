@@ -763,17 +763,6 @@ footer .footer-copyright p {
   opacity: 1;
 }
 
-.fade-left {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 1s;
-}
-
-.js-scroll.scrolled {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 @media screen and (max-width: 767px) {
   .burger {
     display: block;

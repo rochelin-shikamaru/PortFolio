@@ -47,7 +47,7 @@ navA.forEach(item => {
 
 function elementInView(item, percentageScroll = 100) {
   const distanceElement = item.getBoundingClientRect().top + 100;
-  return distanceElement <= window.innerHeight * (percentageScroll / 100);
+  return distanceElement <= window.innerHeight * (percentageScroll / 110);
 }
 
 function displayScrollElement(item) {
